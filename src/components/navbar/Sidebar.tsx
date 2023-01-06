@@ -15,7 +15,7 @@ const SideBar: React.FC = () => {
 
   return (
     <>
-      <MenuUnfoldOutlined style={{fontSize:20,color:'white'}} type="primary" onClick={showDrawer}></MenuUnfoldOutlined>
+      <MenuUnfoldOutlined style={{fontSize:25,color:'white'}} type="primary" onClick={showDrawer}></MenuUnfoldOutlined>
       
       <Drawer title="" placement="left" onClose={onClose} open={open}>
         <MainMenu/>

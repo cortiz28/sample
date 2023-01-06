@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
   return (
     <Layout>
-        <Header  style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%',display:'flex',justifyContent:'space-between',color:'white'}}>
+        <Header  style={{ position: 'sticky', top: 0, zIndex: 1, width: '100%',display:'flex',justifyContent:'space-between',color:'white',paddingLeft:40}}>
         <div><SideBar ></SideBar></div>
         <div className='greet-img-container'>
             <div className='greetings-container'>
