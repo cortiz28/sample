@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items: center;
     width: 20%;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    height: 100%;
 }
 .img-container{
     border: 2px solid black;

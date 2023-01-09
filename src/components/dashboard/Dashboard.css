@@ -1,0 +1,9 @@
+.dashboard-container{
+    display: flex;
+}
+.datalist-container{
+    border: 5px solid black;
+    border-radius: 100%;
+    
+
+}

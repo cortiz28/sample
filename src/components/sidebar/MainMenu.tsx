@@ -23,7 +23,7 @@ function getItem(
 
 const items: MenuItem[] = [
   getItem('Account Settings', 'sub1', <UserOutlined />, [
-    getItem('Option 1', '1'),
+    getItem('Change Name', '1'),
     getItem('Option 2', '2'),
     getItem('Option 3', '3'),
     getItem('Option 4', '4'),
@@ -45,7 +45,7 @@ const items: MenuItem[] = [
 const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
 
 const MainMenu: React.FC = () => {
-  const [openKeys, setOpenKeys] = useState(['sub1']);
+  const [openKeys, setOpenKeys] = useState(['']);
 
   const onOpenChange: MenuProps['onOpenChange'] = (keys) => {
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
@@ -56,6 +56,10 @@ const MainMenu: React.FC = () => {
     }
   };
 
+  const onClickHandler =()=>{
+    
+  }
+
   return (
     <Menu
       mode="inline"
@@ -63,6 +67,7 @@ const MainMenu: React.FC = () => {
       onOpenChange={onOpenChange}
       style={{ width: 256 }}
       items={items}
+      onClick={onClickHandler}
     />
   );
 };
